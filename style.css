@@ -1,0 +1,141 @@
+* {
+	text-align: center;
+}
+
+.ball {
+	width: 50px;
+	height: 50px;
+	border: 2px solid black;
+	border-radius: 50%;
+	display: inline-block;
+	margin-left: 11px;
+	margin-top: 2px;
+}
+
+#title {
+	font-size: 45px;
+	font-weight: bold;
+	text-align: center;
+	background-image: 
+	linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;  
+	animation: rainbow-animation 35s linear infinite;
+}
+
+@keyframes rainbow-animation {
+	to {
+			background-position: 4500vh;
+	}
+}
+
+.guess {
+	width: 400px;
+	height: 60px;
+	border: 2px solid green;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.answerBox {
+	width: 250px;
+	height: 60px;
+	border: 2px solid green;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	text-align: center;
+}
+
+#answer {
+	font-size: 20px;
+	display: inline-block;
+}
+
+.answer-type1, .answer-type2 {
+	display: inline-block;
+	width: 20px;
+	text-align: center;
+	position: absolute;
+	right: 5px;
+	top: 22px
+}
+
+.answer-type2 {
+	left: 5px;
+}
+
+.correctAnswers {
+	width: 200px;
+	height: 80px;
+	border: 2px solid green;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: inline-block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+#points-text {
+	position: absolute;
+	right: 45px; 
+	top: -18px;
+}
+
+#score {
+	position: absolute;
+	bottom: -5px;
+	right: 90px; 
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#guess-color {
+	width: 200px;
+	height: 80px;
+	border: 2px solid green;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: inline-block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	position: relative;	
+}
+
+#guess-text {
+	position: absolute;
+	right: 82px; 
+	top: -18px;
+}
+
+#rgb-color {
+	position: absolute;
+	right: 45px; 
+	bottom: 4px;
+	font-weight: bold;	
+	font-size: 17px;
+}
+
+#score-color {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	text-align: center;
+}
+
+#reset-game {
+    background: rgb(151, 185, 25);
+    padding: 8px 50px;
+	width: 190px;
+	height: 50px;
+    font-weight: bold;
+	margin-top: 15px;
+	border-radius: 50px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+}
